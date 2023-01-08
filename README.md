@@ -1,5 +1,10 @@
 # Unit 4 Challenge: Console Finances
 
+## Deployed site: https://fdunnington.github.io/Console-Finances/
+
+<img width="1440" alt="Screenshot 2022-12-11 at 15 45 13" src="Screenshot 2023-01-08 at 16.12.05.png">
+
+
 ## Overview
 
 In this challenge, you'll be using the concepts you've learned to complete the required activity. This activity presents a real-world situation in which your newfound JavaScript skills will come in handy. You are tasked with creating code for analyzing the financial records of a company. You have been provided with a financial dataset in the `starter/index.js` file.
