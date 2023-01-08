@@ -2,7 +2,7 @@
 
 ## Deployed site: https://fdunnington.github.io/Console-Finances/
 
-<img width="1440" alt="Screenshot 2022-12-11 at 15 45 13" src="Screenshot 2023-01-08 at 16.12.05.png">
+<img width="1440" alt="Screenshot 2022-12-11 at 15 45 13" src="images/Screenshot 2023-01-08 at 16.34.44.png ">
 
 
 ## Overview
