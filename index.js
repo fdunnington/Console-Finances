@@ -89,3 +89,18 @@
         ['Jan-2017', 138230],
         ['Feb-2017', 671099]
     ];
+
+
+    //number of months in array
+    let months = (finances.length);
+    
+    console.log('Total months: ' + months);
+
+
+
+    //net total of array (profit/loss)
+    let netTotal = 0;
+    for (let i = 0; i < (finances.length); i++) {
+        netTotal = netTotal + finances[i][1];
+    }
+    
