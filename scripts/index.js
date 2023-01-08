@@ -112,7 +112,7 @@
         console.log('The net loss is: ' + netTotal);
     }
 
-    
+
 
     //calculating the monthly profit/loss
     let difference = 0;
@@ -136,8 +136,7 @@
 
 
     //Using the sum of the differences to calculate the average monthly change
-    let averageMonthlyDifference = Math.round(100*(sumOfDifferences/months))/100;
-    
+    let averageMonthlyDifference = Math.round(100*(sumOfDifferences/months))/100; 
     if (averageMonthlyDifference  > 0) { // check if number is greater than 0
         console.log('Average monthly profit of ' + averageMonthlyDifference );
     } else if (averageMonthlyDifference  === 0) { // check if number is 0
@@ -152,7 +151,6 @@
     //Biggest profit changes
     let largest= 0;
     let smallest = 0;
-
     for (i=1; i < (arrayOfDifferences.length); i++){
         if (arrayOfDifferences[i] > largest) {
             largest=((finances[i][0])) + ' (' + (arrayOfDifferences[i]) + ') ';
