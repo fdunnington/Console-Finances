@@ -104,3 +104,30 @@
         netTotal = netTotal + finances[i][1];
     }
     
+
+
+    //calculating the monthly profit/loss
+    let difference = 0;
+    for (let i = 1; i < months; i++) {
+        difference = ((finances[i][1]) - (finances[i-1][1])); 
+    }
+    
+
+
+    //total of all monthly differences (needed to work out average monthly difference)
+    let arrayOfDifferences = [difference];
+    for (let i=1; i < months; i++) {
+        arrayOfDifferences[i] = ((finances[i][1]) - (finances[i-1][1]));
+    }
+
+    let sumOfDifferences = 0;
+    for (let i = 0; i < (arrayOfDifferences.length); i++) {
+        sumOfDifferences += arrayOfDifferences[i];
+    }
+
+
+
+    //Using the sum of the differences to calculate the average monthly change
+    let averageMonthlyDifference = Math.round(100*(sumOfDifferences/months))/100;
+
+    console.log('Average monthly change over the period: ' + averageMonthlyDifference);
