@@ -104,7 +104,15 @@
         netTotal = netTotal + finances[i][1];
     }
     
+    if (netTotal > 0) { // check if number is greater than 0
+        console.log('The net profit is: ' + netTotal);
+    } else if (netTotal === 0) { // check if number is 0
+        console.log('There has been no change ' + netTotal);
+    } else { // if number is less than 0
+        console.log('The net loss is: ' + netTotal);
+    }
 
+    
 
     //calculating the monthly profit/loss
     let difference = 0;
@@ -129,5 +137,30 @@
 
     //Using the sum of the differences to calculate the average monthly change
     let averageMonthlyDifference = Math.round(100*(sumOfDifferences/months))/100;
+    
+    if (averageMonthlyDifference  > 0) { // check if number is greater than 0
+        console.log('Average monthly profit of ' + averageMonthlyDifference );
+    } else if (averageMonthlyDifference  === 0) { // check if number is 0
+        console.log('There average monthly change is ' + averageMonthlyDifference );
+    } else { // if number is less than 0
+        console.log('Average monthly loss of ' + averageMonthlyDifference );
+    }
 
-    console.log('Average monthly change over the period: ' + averageMonthlyDifference);
+
+    
+    
+    //Biggest profit changes
+    let largest= 0;
+    let smallest = 0;
+
+    for (i=1; i < (arrayOfDifferences.length); i++){
+        if (arrayOfDifferences[i] > largest) {
+            largest=((finances[i][0])) + ' (' + (arrayOfDifferences[i]) + ') ';
+
+        } else if (arrayOfDifferences[i] < smallest) {
+            smallest=((finances[i][0])) + ' (' + (arrayOfDifferences[i]) + ') ';
+        }
+    }
+
+    console.log('The largest increase in profits was in ' + largest);
+    console.log('The largest decrease in profits was in ' + smallest);
